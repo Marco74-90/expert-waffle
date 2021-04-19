@@ -5,69 +5,79 @@
       "anime": "One Punch Man",
       "character": "Saitama",
       "quote": "If you really want to be strong... Stop caring about what your surrounding thinks of you!",
-      "image": ""
+      "image": "",
+      "likes": 0
     },
     {
       "id": 2,
       "anime": "One Punch Man",
       "character": "Saitama",
       "quote": "Prophecies don't ever come true.",
-      "image": ""
+      "image": "",
+      "likes": 0
     },
     { 
       "id": 3,
       "anime": "One Punch Man",
       "character": "Saitama",
       "quote": "Heroes and the police don't do their jobs because someone says \"please\". Right?",
-      "image": ""
+      "image": "",
+      "likes": 0
     },
     {
       "id": 4,
       "anime": "One Punch Man",
       "character": "Saitama",
       "quote": "Who decides limits? And based on what? You said you worked hard? Well, maybe you need to work a little harder. Is that really the limit of your strength? Could the you of tomorrow beat you today? Instead of giving in, move forward.",
-      "image": ""
+      "image": "",
+      "likes": 0
     },
     {
       "id": 5,
       "anime": "One Punch Man",
       "character": "Saitama",
       "quote": "You may be able to get stronger with simply the right attitude. In other words, train your spirit before worrying about strength through power and technology.",
-      "image": ""
+      "image": "",
+      "likes": 0
     },
     {
       "id": 6,
       "anime": "One Punch Man",
       "character": "Saitama",
       "quote": "In exchange for gaining strength, have I lost something more important as a human being? Emotions used to swirl within me when I fought. Fear, impatience, anger... But now... Day after day, after one punch I go home unharmed and wash my gloves.",
-      "image": ""
+      "image": "",
+      "likes": 0
     },
     {
       "id": 7,
       "anime": "One Punch Man",
       "character": "Saitama",
       "quote": "Is that really... the limit to your power? Do you honestly think that you won't get any stronger for the rest of your life? Instead of sitting around frustrated, it's better to keep on moving forward.",
-      "image": ""
+      "image": "",
+      "likes": 0
     },
     {
       "id": 8,
       "anime": "One Punch Man",
       "character": "Saitama",
       "quote": "I'm not a hero because I want your approval. I do it because I want to!",
-      "image":  ""
+      "image":  "",
+      "likes": 0
     },
     {
       "id": 9,
       "anime": "One Punch Man",
       "character": "Saitama",
       "quote": "Human beings are strong because we have the ability to change ourselves.",
-      "image": ""
+      "image": "",
+      "likes": 0
     },
     {
       "id": 10,
       "anime": "One Punch Man",
       "character": "Saitama",
       "quote": "I'll leave tomorrow's problems to tomorrow's me.",
-      "image": ""
+      "image": "",
+      "likes": 0
     }
   ]
