@@ -1,3 +1,15 @@
-h1 {
+.header {
   color: blue;
+  background-color: cornflowerblue;
+  text-align: center;
+}
+
+#anime-bar {
+  background-color: #ffe4c4;
+  float: left;
+}
+
+#detailed-info {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
 }
