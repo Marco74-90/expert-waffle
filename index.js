@@ -15,5 +15,6 @@ function renderQuotes(quotes){
         document.getElementById("name").innerText = quotes.character
         document.getElementById("quote").innerText = quotes.quote
         document.getElementById("show").innerText = quotes.anime
+        document.getElementById("image").src = quotes.image
     })
 }
