@@ -18,5 +18,3 @@ function renderQuotes(quotes){
         document.getElementById("image").src = quotes.image
     })
 }
-
-console.log("hello")
