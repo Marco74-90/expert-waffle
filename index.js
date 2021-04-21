@@ -9,6 +9,7 @@ fetch(Base_Url)
 function renderQuotes(quotes){
     const button = document.createElement("BUTTON")
     button.innerText = quotes.id
+    button.className = "btn"
     document.getElementById("anime-bar").append(button)
 
     button.addEventListener("click", () => {
