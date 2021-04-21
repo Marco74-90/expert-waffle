@@ -3,19 +3,23 @@ console.log("Hello Marcus!");
 const Base_Url = "http://localhost:3000/quotes/";
 
 fetch(Base_Url)
-  .then((resp) => resp.json())
-  .then((quotes) => quotes.forEach(renderQuotes));
 
-function renderQuotes(quotes) {
-  const button = document.createElement("BUTTON");
-  button.innerText = quotes.id;
-  document.getElementById("anime-bar").append(button);
+.then(resp => resp.json())
+.then(quotes => quotes.forEach(renderQuotes))
 
-  button.addEventListener("click", () => {
-    document.getElementById("name").innerText = quotes.character;
-    document.getElementById("quote").innerText = quotes.quote;
-    document.getElementById("show").innerText = quotes.anime;
-    document.getElementById("image").src = quotes.image;
+function renderQuotes(quotes){
+    const button = document.createElement("BUTTON")
+    button.innerText = quotes.id
+    button.className = "btn"
+    document.getElementById("anime-bar").append(button)
+
+    button.addEventListener("click", () => {
+        document.getElementById("name").innerText = quotes.character
+        document.getElementById("quote").innerText = quotes.quote
+        document.getElementById("show").innerText = quotes.anime
+        document.getElementById("image").src = quotes.image
+    })
+  
     const likes = document.querySelector(".likes");
     likes.innerText = `Likes: ${quotes.likes}`;
     likes.addEventListener("click", (event) => {
@@ -40,6 +44,7 @@ function renderQuotes(quotes) {
         });
     });
   });
+
 }
 
 const addNew = document.createElement("BUTTON")

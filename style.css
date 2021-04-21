@@ -5,8 +5,10 @@
 }
 
 #anime-bar {
-  background-color: #ffe4c4;
-  float: left;
+  background-color: black;
+  width: 200px;
+  border-radius: 25px;
+
 }
 
 #detailed-info {
@@ -14,7 +16,14 @@
   text-align: center;
 }
 
-button {
-    flex-direction: column;
-    justify-content: space-around;
+.btn {
+  font-family: fantasy;
+  display: block;
+  width:100px;
+  margin-left: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color:yellow;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px red;;
 }
