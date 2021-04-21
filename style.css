@@ -25,6 +25,7 @@
   display: block;
   width: 100px;
   margin-left: 50px;
+  margin-right: 50px;
   margin-top: 5px;
   margin-bottom: 5px;
   background-color: yellow;
@@ -45,6 +46,7 @@
   height: 14rem;
   width: auto;
 }
+
 body {
   background-image: linear-gradient(to bottom right, red, yellow);
   margin: 0;
@@ -58,3 +60,60 @@ body {
   color: black;
   font-family: fantasy;
 }
+
+
+.form-container{
+  background: #ffff;
+  margin: 0 auto;
+  text-align: center;
+  width: 640px;
+
+}
+
+.form{
+  margin: 20px 20px 0;
+  padding: 0 0 20px;
+  font-family: fantasy;
+  border: 3px black;
+}
+
+input{
+  display: block;
+  margin-left: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.form-top{
+  background-color: #444444;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-indent: -8000;
+
+}
+
+.form-top a {
+  display: block;
+  height: 100%;
+  min-height: 40px;
+  overflow: hidden;
+}
+
+.form-description{
+  border-bottom: 2px dotted black;
+  clear: both;
+  display: inline-block;
+  margin: 0 0 1em
+}
+
+.form-description h2 {
+  clear: left;
+  text-align: center;
+  font-size: 160%;
+  font-weight: 400;
+  margin: 0 0 3px;
+}
+
+
