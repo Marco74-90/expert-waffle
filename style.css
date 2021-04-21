@@ -1,7 +1,12 @@
 .header {
-  color: blue;
-  background-color: cornflowerblue;
+  color: yellow;
+  background-image: linear-gradient(to bottom right, red, black);
   text-align: center;
+  margin-top: 0;
+  height: 75px;
+  padding-top: 15px;
+  font-family: fantasy;
+  
 }
 
 #anime-bar {
@@ -33,14 +38,29 @@
 }
 
 .quote-info {
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 .quote-info img {
   height: 14rem;
   width: auto;
 }
+
+body {
+  background-image: linear-gradient(to bottom right, red, yellow);
+  margin: 0;
+  padding: 0;
+}
+
+.likes {
+  background-color: yellow;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px red;
+  color: black;
+  font-family: fantasy;
+}
+
 
 .form-container{
   background: #ffff;
@@ -95,4 +115,5 @@ input{
   font-weight: 400;
   margin: 0 0 3px;
 }
+
 
