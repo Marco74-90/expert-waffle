@@ -22,8 +22,12 @@ function renderQuotes(quotes) {
     document.getElementById("quote").innerText = quotes.quote;
     document.getElementById("show").innerText = quotes.anime;
     document.getElementById("image").src = quotes.image;
+
+    
+
     document.querySelector(".delete").innerHTML = " "
     document.querySelector(".delete").append(deleteBtn)
+
   });
 
 
