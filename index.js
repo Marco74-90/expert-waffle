@@ -91,21 +91,25 @@ addNew.addEventListener("click", () => {
   newForm.setAttribute("action", "submit.php");
 
   const nameInput = document.createElement("input");
+  nameInput.setAttribute("required","required")
   nameInput.setAttribute("type", "text");
   nameInput.setAttribute("placeholder", "name");
   newForm.appendChild(nameInput);
 
   const animeInput = document.createElement("input");
+  animeInput.setAttribute("required", "required")
   animeInput.setAttribute("type", "text");
   animeInput.setAttribute("placeholder", "anime");
   newForm.appendChild(animeInput);
 
   const imageInput = document.createElement("input");
+  imageInput.setAttribute("required", "required")
   imageInput.setAttribute("type", "text");
   imageInput.setAttribute("placeholder", "ImageURL");
   newForm.appendChild(imageInput);
 
   const quoteInput = document.createElement("input");
+  quoteInput.setAttribute("required", "required")
   quoteInput.setAttribute("type", "text");
   quoteInput.setAttribute("placeholder", "quote");
   newForm.appendChild(quoteInput);
