@@ -10,9 +10,11 @@
 }
 
 #anime-bar {
-  background-color: black;
+  background-color: linear-gradient(to top left, black, red);
   width: 200px;
+  margin: 10px;
   border-radius: 25px;
+  box-shadow:   5px 5px 5px 5px black;
 }
 
 #detailed-info {
@@ -20,17 +22,30 @@
   text-align: center;
 }
 
+
+.addNew{
+  display : block;
+  width: 100px;
+  margin-left: 50px;
+  margin: 50px;
+  background-color: red;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px 5px black;
+}
+
+
 .btn {
+  
   font-family: fantasy;
   display: block;
   width: 100px;
   margin-left: 50px;
   margin-right: 50px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background-color: yellow;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: red;
   border-radius: 25px;
-  box-shadow: 2px 2px 5px red;
+  box-shadow: 5px 5px 5px 5px black;
 }
 
 #parent {
@@ -38,8 +53,9 @@
 }
 
 .quote-info {
+  width: 658.8px;
   padding-right: 100px;
-  padding-left: 100px;
+  padding-left: 200px;
 }
 
 .quote-info img {
