@@ -21,12 +21,13 @@ function renderQuotes(quotes) {
 
   const likes = document.querySelector(".likes");
   likes.innerText = `Likes: ${quotes.likes}`;
+
   likes.addEventListener("click", (event) => {
     const id = quotes.id;
     quotes.likes += 1;
 
     const updatedLikes = {
-      likes: quotes.likes + 1,
+      likes: quotes.likes,
     };
 
     console.log(event);
@@ -45,13 +46,13 @@ function renderQuotes(quotes) {
 }
 
 const addNew = document.createElement("BUTTON");
-addNew.className = "addNew"
+addNew.className = "addNew";
 addNew.innerText = "Add New Quote";
 document.getElementById("anime-bar").appendChild(addNew);
 addNew.addEventListener("click", () => {
-  addNew.disabled = true
+  addNew.disabled = true;
   const newForm = document.createElement("form");
-  newForm.className = "form"
+  newForm.className = "form";
   newForm.setAttribute("method", "post");
   newForm.setAttribute("action", "submit.php");
 
@@ -80,29 +81,22 @@ addNew.addEventListener("click", () => {
   submitBtn.setAttribute("value", "submit");
   newForm.appendChild(submitBtn);
 
+  const formTop = document.createElement("h1");
+  formTop.className = "form-top";
+  const a = document.createElement("a");
+  formTop.appendChild(a);
 
+  const formDes = document.createElement("div");
+  formDes.className = "form-description";
+  const h2 = document.createElement("h2");
+  h2.innerText = "Add New Quote";
+  formDes.appendChild(h2);
 
-
-  const formTop = document.createElement("h1")
-  formTop.className = "form-top"
-  const a = document.createElement("a")
-  formTop.appendChild(a)
-
-  const formDes = document.createElement("div")
-  formDes.className = "form-description"
-  const h2 = document.createElement("h2")
-  h2.innerText = "Add New Quote"
-  formDes.appendChild(h2)
-
-
-  const div = document.createElement("div")
-  div.append(formTop, formDes, newForm)
+  const div = document.createElement("div");
+  div.append(formTop, formDes, newForm);
   //debugger
-  const formContainer = document.querySelector(".form-container")
-  formContainer.append(div)
-
-
-
+  const formContainer = document.querySelector(".form-container");
+  formContainer.append(div);
 
   newForm.addEventListener("submit", (e) => {
     e.preventDefault();

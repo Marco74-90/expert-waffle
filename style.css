@@ -6,7 +6,7 @@
   height: 75px;
   padding-top: 15px;
   font-family: fantasy;
-  
+  border: 2px ridge black;
 }
 
 #anime-bar {
@@ -14,17 +14,19 @@
   width: 200px;
   margin: 10px;
   border-radius: 25px;
-  box-shadow:   5px 5px 5px 5px black;
+  box-shadow: 5px 5px 5px 5px black;
+}
+.btn:hover {
+  background-color: yellow;
 }
 
 #detailed-info {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
-
-.addNew{
-  display : block;
+.addNew {
+  display: block;
   width: 100px;
   margin-left: 50px;
   margin: 50px;
@@ -32,10 +34,11 @@
   border-radius: 25px;
   box-shadow: 5px 5px 5px 5px black;
 }
-
+.addNew:hover {
+  background-color: #ff6701;
+}
 
 .btn {
-  
   font-family: fantasy;
   display: block;
   width: 100px;
@@ -46,6 +49,11 @@
   background-color: red;
   border-radius: 25px;
   box-shadow: 5px 5px 5px 5px black;
+  transition: 0.8s;
+}
+
+.btn:hover {
+  transform: translate(10px);
 }
 
 #parent {
@@ -61,6 +69,8 @@
 .quote-info img {
   height: 14rem;
   width: auto;
+  border: 3px solid black;
+  border-radius: 4px;
 }
 
 body {
@@ -70,44 +80,44 @@ body {
 }
 
 .likes {
-  background-color: yellow;
+  background-color: red;
   border-radius: 25px;
-  box-shadow: 2px 2px 5px red;
+  box-shadow: 2px 2px 5px black;
   color: black;
   font-family: fantasy;
 }
+.likes:hover {
+  background-color: #ff6701;
+}
 
-
-.form-container{
+.form-container {
   background: #ffff;
   margin: 0 auto;
   text-align: center;
   width: 640px;
-
 }
 
-.form{
+.form {
   margin: 20px 20px 0;
   padding: 0 0 20px;
   font-family: fantasy;
   border: 3px black;
 }
 
-input{
+input {
   display: block;
   margin-left: 200px;
   padding: 10px;
   box-sizing: border-box;
 }
 
-.form-top{
+.form-top {
   background-color: #444444;
   min-height: 0;
   margin: 0;
   padding: 0;
   text-decoration: none;
   text-indent: -8000;
-
 }
 
 .form-top a {
@@ -117,11 +127,11 @@ input{
   overflow: hidden;
 }
 
-.form-description{
+.form-description {
   border-bottom: 2px dotted black;
   clear: both;
   display: inline-block;
-  margin: 0 0 1em
+  margin: 0 0 1em;
 }
 
 .form-description h2 {
@@ -131,5 +141,6 @@ input{
   font-weight: 400;
   margin: 0 0 3px;
 }
-
-
+* {
+  box-sizing: border-box;
+}
