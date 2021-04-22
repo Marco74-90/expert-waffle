@@ -10,15 +10,48 @@ function renderQuotes(quotes) {
   const button = document.createElement("BUTTON");
   button.innerText = quotes.id;
   button.className = "btn";
+  button.id = `button-${quotes.id}`
   document.getElementById("anime-bar").append(button);
+
+  const deleteBtn = document.createElement("BUTTON")
+  //deleteBtn.id = `button-${quotes.id}`
+
 
   button.addEventListener("click", () => {
     document.getElementById("name").innerText = quotes.character;
     document.getElementById("quote").innerText = quotes.quote;
     document.getElementById("show").innerText = quotes.anime;
     document.getElementById("image").src = quotes.image;
+
     
+
+    document.querySelector(".delete").innerHTML = " "
+    document.querySelector(".delete").append(deleteBtn)
+
   });
+
+
+  deleteBtn.addEventListener("click",() =>{
+    const id = quotes.id
+    const btnId = document.getElementById(`button-${quotes.id}`)
+    
+    fetch(Base_Url+id, {method: "DELETE"})
+    //.then(()=> console.log(document.querySelector("btnId")))
+    .then(()=> {
+
+      document.getElementById("name").innerText = "Name";
+      document.getElementById("quote").innerText = "Quote";
+      document.getElementById("show").innerText = "Show";
+      document.getElementById("image").src = " ";
+      document.querySelector(".delete").innerHTML = " ";
+      btnId.remove() 
+      
+      
+       
+      
+
+    }) 
+  })
 
   const likes = document.querySelector(".likes");
   likes.innerText = `Likes: ${quotes.likes}`;
