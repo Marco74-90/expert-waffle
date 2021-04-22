@@ -17,6 +17,7 @@ function renderQuotes(quotes) {
     document.getElementById("quote").innerText = quotes.quote;
     document.getElementById("show").innerText = quotes.anime;
     document.getElementById("image").src = quotes.image;
+    
   });
 
   const likes = document.querySelector(".likes");

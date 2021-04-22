@@ -33,6 +33,7 @@
   background-color: red;
   border-radius: 25px;
   box-shadow: 5px 5px 5px 5px black;
+  cursor: pointer;
 }
 .addNew:hover {
   background-color: #ff6701;
@@ -50,6 +51,7 @@
   border-radius: 25px;
   box-shadow: 5px 5px 5px 5px black;
   transition: 0.8s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -85,6 +87,7 @@ body {
   box-shadow: 2px 2px 5px black;
   color: black;
   font-family: fantasy;
+  cursor: pointer;
 }
 .likes:hover {
   background-color: #ff6701;
@@ -143,4 +146,10 @@ input {
 }
 * {
   box-sizing: border-box;
+}
+.form-container {
+  background-image: linear-gradient(to bottom right,yellow, red, black);
+}
+a{
+  background-color: black;
 }
