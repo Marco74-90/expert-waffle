@@ -45,6 +45,7 @@ function renderQuotes(quotes) {
 }
 
 const addNew = document.createElement("BUTTON");
+addNew.className = "addNew"
 addNew.innerText = "Add New Quote";
 document.getElementById("anime-bar").appendChild(addNew);
 addNew.addEventListener("click", () => {
