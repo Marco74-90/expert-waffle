@@ -111,7 +111,7 @@ addNew.addEventListener("click", () => {
 
   const imageInput = document.createElement("input");
   imageInput.setAttribute("required", "required")
-  imageInput.setAttribute("type", "text");
+  imageInput.setAttribute("type", "url");
   imageInput.setAttribute("placeholder", "ImageURL");
   newForm.appendChild(imageInput);
 
