@@ -12,9 +12,14 @@ function renderQuotes(quotes) {
   button.className = "btn";
   button.id = `button-${quotes.id}`
   document.getElementById("anime-bar").append(button);
+  const likesBtn = document.createElement('button')
+  likesBtn.id = `likes-${quotes.id}`
+  likesBtn.className = 'likesBtn';
 
   const deleteBtn = document.createElement("BUTTON")
   //deleteBtn.id = `button-${quotes.id}`
+  deleteBtn.className = "deleteBtn";
+  deleteBtn.innerText = "Delete"
 
 
   button.addEventListener("click", () => {
@@ -27,6 +32,8 @@ function renderQuotes(quotes) {
 
     document.querySelector(".delete").innerHTML = " "
     document.querySelector(".delete").append(deleteBtn)
+    document.querySelector(".likes").innerHTML = " "
+    document.querySelector(".likes").append(likesBtn)
 
   });
 
@@ -53,10 +60,10 @@ function renderQuotes(quotes) {
     }) 
   })
 
-  const likes = document.querySelector(".likes");
-  likes.innerText = `Likes: ${quotes.likes}`;
+  //const likesBtn = document.querySelector(".likes");
+  likesBtn.innerText = `Likes: ${quotes.likes}`;
 
-  likes.addEventListener("click", (event) => {
+  likesBtn.addEventListener("click", (event) => {
     const id = quotes.id;
     quotes.likes += 1;
 
@@ -74,7 +81,7 @@ function renderQuotes(quotes) {
     fetch(Base_Url + id, reqObj)
       .then((response) => response.json())
       .then((updatedLikes) => {
-        likes.innerText = `Likes: ${updatedLikes.likes}`;
+        likesBtn.innerText = `Likes: ${updatedLikes.likes}`;
       });
   });
 }

@@ -81,7 +81,7 @@ body {
   padding: 0;
 }
 
-.likes {
+.likesBtn {
   background-color: red;
   border-radius: 25px;
   box-shadow: 2px 2px 5px black;
@@ -89,7 +89,7 @@ body {
   font-family: fantasy;
   cursor: pointer;
 }
-.likes:hover {
+.likesBtn:hover {
   background-color: #ff6701;
 }
 
@@ -148,8 +148,19 @@ input {
   box-sizing: border-box;
 }
 .form-container {
-  background-image: linear-gradient(to bottom right,yellow, red, black);
+  background-image: linear-gradient(to bottom right, yellow, red, black);
 }
-a{
+a {
   background-color: black;
+}
+.deleteBtn {
+  background-color: red;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px black;
+  color: black;
+  font-family: fantasy;
+  cursor: pointer;
+}
+.deleteBtn:hover {
+  background-color: #ff6701;
 }
