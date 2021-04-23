@@ -149,8 +149,8 @@ addNew.addEventListener("click", () => {
     const newQuote = {
       anime: e.target[1].value,
       character: e.target[0].value,
-      quote: e.target[3],
-      image: e.target[2],
+      quote: e.target[3].value,
+      image: e.target[2].value,
       likes: 0,
     };
 
